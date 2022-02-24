@@ -69,20 +69,31 @@ ul{
     position: relative;
 }
 .ban_text{
+    position: relative;
     text-align: right;
     position: absolute;
     color: #fff;
     top: 150px;
     right: 0;
-    z-index: 1
-    ;
+    z-index: 1;
+
+}
+.ban_text::after{
+    position: absolute;
+    width: 170px;
+    height: 2px;
+    top: 110px;
+    right: 0;
+    content: '';
+    background-color: #d1d1d1;
 }
 .ban_text h1::first-letter {
     color: #666699;
 }
 .ban_text P{
     max-width: 550px;
-    padding: 10px 0;
+    padding-top: 50px;
+    /* padding: 40px 0; */
 }
 .ban_btn{
     position: relative;
@@ -92,10 +103,13 @@ ul{
 .ban_btn a{
     color: #fff;
     padding-left: 40px;
+
     padding-right: 10px;
     background-color: #663399;
     border-radius: 10%;
-
+}
+.ban_btn p{
+    padding-top: 8px;
 }
 .ban_btn a:hover{
     color: #fff;
